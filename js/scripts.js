@@ -13,6 +13,9 @@ $(document).ready(function(){
          if( x % 5 == 0 ) {
              document.write("pong");
          }
+         if( x % 15 == 0 ) {
+             document.write("pingpong");
+         }
      }
      document.write('<br>'); //line breaks to enhance output readability
    }
