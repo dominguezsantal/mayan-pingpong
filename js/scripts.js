@@ -1,5 +1,4 @@
-$(document).ready(function()) {
-  for (var x=1; x <= 100; x++){
+/*for (var x=1; x <= 100; x++){
       if( x % 3 && x % 5 ) {
           document.write(x);
       } else {
@@ -12,4 +11,3 @@ $(document).ready(function()) {
       }
       document.write('<br>');
   }
-});
