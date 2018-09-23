@@ -10,12 +10,14 @@
   <body>
     <div class="container">
       <h2>Welcome to Mayan Ping Pong</h2>
+<!--Navbar -->
       <ul>
         <li><a href="default.asp">Home</a></li>
         <li><a href="news.asp">News</a></li>
         <li><a href="contact.asp">Contact</a></li>
         <li><a href="about.asp">About</a></li>
       </ul>
+      <!--Pingpong number form row -->
         <div class="row">
           <div class="col-md-4">
             <img src="Maya.Numbers.Chart.jpg" alt="Mayan Numbers">
@@ -26,7 +28,6 @@
               <li>Numbers divisible by 5 will pop message "pong"</li>
               <li>Numbers divisible by 15 will pop message "ping-pong"</li>
             </ol>
-
             <form id="numberInput">
               <label for="number">Please enter a number</label>
               <input id="number" type="text">
@@ -35,16 +36,10 @@
             <div id="output">
             </div>
           </div>
-
+<!--Mayan month form row -->
           <form id="CalendarMonth">
             <h2>Find Your Mayan Birth Month</h2>
-            <h4>What month were you born?</h4><input name= "month" type="text" size="20">
-            <h2>What day was you born?</h2><input name="day" type="text" size="20">
-            <button onclick="submitMonth()">View Month</button>
-          </form>
-          <div id ="output2">
-
-          </div>
+            <img src="mayan.calendar.gif" alt="calendat">
         </div>
     </div>
   </body>

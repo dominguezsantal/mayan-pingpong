@@ -1,6 +1,7 @@
 $(document).ready(function(){
   $("form#numberInput").submit(function() {
     event.preventDefault();
+
     var number = parseInt($("#number").val());
     var result;
     for (var x=1; x <= number; x++){
@@ -21,5 +22,6 @@ $(document).ready(function(){
    }
 
    $("#output").text(result);
+
+     });
   });
-});
