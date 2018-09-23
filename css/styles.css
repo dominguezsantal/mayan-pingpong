@@ -53,3 +53,8 @@ img {
   flex-direction: column;
   float: right;
 }
+.jumbotron {
+  background-color: black;
+  color: white;
+
+}
