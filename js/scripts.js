@@ -1,22 +1,26 @@
-//Business Logic
-var number = x;
-for (var x = 1; x <= 100; x++) {
-    var output = '';
-    if (x % 3 === 0) output += ('ping');
-    if (x % 5 === 0) output += ('pong');
-    console.log(output || x);
+function resultLoop(number) {
+  var resultOutput = [];
+  for (var x = 1; x <= number; x++) {
+    if ((x % 15) === 0){
+      resultOutput.push('pingpong');
+    } else if((x % 5) === 0) {
+      resultOutput.push('pong');
+    } else if((x % 3) === 0) {
+      resultOutput.push('ping');
+    } else {
+      resultOutput.push(x);
+    }
+  }
+  return resultOutput;
 }
-
-
-
-//User Interface
 $(document).ready(function(){
-  $("form#numberInput").submit(function(event) {
+  $('.btn').click(function(event){
+    $('#numberInput').empty();
+    var result = parseInt($('#resultOutput').val());
+    resultOutput = resultLoop(x);
+    for(var x = 0; x < resultOutput.length; i++){
+      $('#numberInput').append('<li>' + resultOutput[x] + '</li>');
     event.preventDefault();
-
-    var number = parseInt($("#number").val());
-
-   $("#output").text(output);
-
-     });
+    }
   });
+});
