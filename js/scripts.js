@@ -1,26 +1,27 @@
 function resultLoop(number) {
-  var resultOutput = [];
+  var numArray = [];
   for (var x = 1; x <= number; x++) {
     if ((x % 15) === 0){
-      resultOutput.push('pingpong');
+      numArray.push('pingpong');
     } else if((x % 5) === 0) {
-      resultOutput.push('pong');
+      numArray.push('pong');
     } else if((x % 3) === 0) {
-      resultOutput.push('ping');
+      numArray.push('ping');
     } else {
-      resultOutput.push(x);
+      numArray.push(x);
     }
   }
-  return resultOutput;
+  return numArray;
 }
 $(document).ready(function(){
   $('.btn').click(function(event){
-    $('#numberInput').empty();
-    var result = parseInt($('#resultOutput').val());
-    resultOutput = resultLoop(x);
-    for(var x = 0; x < resultOutput.length; i++){
-      $('#numberInput').append('<li>' + resultOutput[x] + '</li>');
+    $("numArray").show();
+    var input = parseInt($('#numberInput').val());
+    numArray = resultLoop(input);
+    for(var x = 0; x < numArray.length; x++){
+      $('#numberInput').append('<li>' + numArray[x] + '</li>');
     event.preventDefault();
-    }
+
+    }*/
   });
 });
